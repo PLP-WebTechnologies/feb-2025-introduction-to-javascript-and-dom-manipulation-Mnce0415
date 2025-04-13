@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Book Library</title>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Virtual Book Library</h1>
+
+    <!-- 🔍 Search Box -->
+    <label for="searchBox">Search Title:</label>
+    <input type="text" id="searchBox" oninput="filterBooks()" placeholder="Enter book title..." />
+  
+    <label for="category">Filter by Category:</label>
+    <select id="category" onchange="filterBooks()">
+      <option value="">All Categories</option>
+      <option value="biography">Biography</option>
+      <option value="personal development">Personal</option>
+      <option value="romance">Romance</option>
+    </select>
+
+    <!-- 📖 Book List -->
+    <div id="bookList"></div>
+  </div>
+
+  <footer>
+    <p>2025 &copy; Book Visual Library</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
